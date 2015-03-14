@@ -58,6 +58,8 @@ exports.edit = function(req, res, next) {
       //update 
       article.title = req.body.title
       article.text = req.body.text
+      article.rating = req.body.rating
+      article.slug = req.body.slug
 
       //save
       article.save(function (err){

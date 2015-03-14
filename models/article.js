@@ -16,6 +16,10 @@ var articleSchema = new Schema({
   slug: {
     type: String,
     set: function(value){return value.toLowerCase().replace(' ', '-')}
+  },
+  rating: {
+    type: Number,
+    default: 1
   }
 });
 
